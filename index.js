@@ -21,7 +21,9 @@ function merge(arrayOne, arrayTwo) {
       sorted.push(findMinAndRemoveSorted(arrayOne))
     } else if (arrayOne[0] > arrayTwo[0]) {
       sorted.push(findMinAndRemoveSorted(arrayTwo))
-    } 
+    } else {
+      sorted.push(findMinAndRemoveSorted(arrayTwo))
+    }
   }
   return sorted
 }
