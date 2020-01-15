@@ -18,13 +18,9 @@ function merge(arrayOne, arrayTwo) {
   
   while (arrayOne.length !== 0 && arrayTwo.length !== 0) {
     if (arrayOne[0] > arrayTwo[0]) {
-      sorted.push(findMinAndRemoveSorted())
+      sorted.push(findMinAndRemoveSorted(arrayTwo))
     } else if (arrayOne[0] < arrayTwo[0]) {
-      sorted.push(arrayOne.shift())
-    } else if (arrayOne === undefined || arrayOne.length === 0) {
-      sorted.push(arrayTwo.shift())
-    } else if (arrayTwo === undefined || arrayTwo.length === 0) {
-      sorted.push(arrayOne.shift())
+      sorted.push(findMinAndRemoveSorted(arrayOne))
     } 
   }
   return sorted
