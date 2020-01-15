@@ -32,8 +32,8 @@ function mergeSort(unsortedArray) {
   let arrayTwo = unsortedArray.slice(midIndex, unsortedArray.length);
   
   if (arrayOne.length === 0){
-    
+    return arrayOne.concat(arrayTwo)
   } else {
-    merge(arrayOne, mergeSort(arrayTwo))
+    return merge(mergeSort(arrayOne), mergeSort(arrayTwo))
   }
 }
