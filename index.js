@@ -26,8 +26,3 @@ function merge(arrayOne, arrayTwo) {
   return sorted.concat(arrayOne).concat(arrayTwo)
 }
 
-let firstSubarray = [3, 4, 6, 7]
-let secondSubArray = [1, 2, 5, 8]
-console.log(merge(firstSubarray, secondSubArray))
-console.log(firstSubarray)
-console.log(secondSubArray)
