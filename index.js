@@ -26,3 +26,4 @@ function merge(arrayOne, arrayTwo) {
   return sorted.concat(arrayOne).concat(arrayTwo)
 }
 
+function mergeSort()
