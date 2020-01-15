@@ -26,4 +26,9 @@ function merge(arrayOne, arrayTwo) {
   return sorted.concat(arrayOne).concat(arrayTwo)
 }
 
-function mergeSort()
+function mergeSort(unsortedArray) {
+  let arrayOne;
+  let arrayTwo;
+  
+  if (arrayOne)
+}
