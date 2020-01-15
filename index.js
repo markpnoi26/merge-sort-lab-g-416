@@ -27,8 +27,9 @@ function merge(arrayOne, arrayTwo) {
 }
 
 function mergeSort(unsortedArray) {
-  let arrayOne;
-  let arrayTwo;
+  let midIndex = unsortedArray.length/2
+  let arrayOne = unsortedArray.slice(0, midIndex);
+  let arrayTwo = unsortedArray.slice(midIndex, unsortedArray.length);
   
   if (arrayOne)
 }
