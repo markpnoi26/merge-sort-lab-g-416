@@ -23,7 +23,7 @@ function merge(arrayOne, arrayTwo) {
       sorted.push(findMinAndRemoveSorted(arrayTwo))
     } 
   }
-  return sorted.concat(arrayOne).cocat(arrayTwo)
+  return sorted.concat(arrayOne).concat(arrayTwo)
 }
 
 let firstSubarray = [3, 4, 6, 7]
